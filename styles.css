@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Never use default fonts again^ */
+
+ body {
+    font-family: 'Open Sans',Impact, 'Arial Narrow Bold', sans-serif;
+    margin: 0; 
+    padding: 0; 
+    background-color: #000406;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+ }
+
+
+.picContainer{
+    width: 50%;
+    margin: 0 auto; 
+
+}
+
+
+ .casinoSVJ{
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+
+
+button {
+    display: inline-block;
+    outline: 0;
+    margin-top: 10px;;
+    cursor: pointer;
+    padding: 20px 40px; /* Increased padding for larger buttons */
+    font-size: 24px; /* Larger font size */
+    font-weight: 500;
+    min-width: 300px;
+    line-height: 10px; /* Adjust line height to match larger font */
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #cfcdc8;
+    background-color: #d9001f;
+    border-color:white;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: color 0.2s cubic-bezier(0.3, 0, 0.5, 1), background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1), border-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+
+    /* For the transition cubic-bezier function to create a smooth "easing" effect.  */
+
+    /* The numbers in the function define the speed curve of the transition,while the duration (0.2 seconds) 
+    specifies how long the transition lasts. 0.3 and 0 at the start create a slow beginning 
+    then 0.5 and 1 at the end causing a faster finish. */
+
+}
+
+
+button:hover {
+    background-color: #ffa8b5;
+    border-color: #1b1f2326;
+}
+
+input {
+    padding: 15px; 
+    font-size: 20px;
+    width: 70%;
+    min-width: 200px;
+    background-color: #cfcdc8;
+}
+
+p {
+    font-size: 22px;
+    color: #d9001f
+}
+
+
+
+@media (max-width: 768px) {
+
+    body{
+        margin-left: 5%;
+    }
+
+    .picContainer {
+        width: 80%; /
+    }
+
+    button, input {
+        width: 85%; 
+        padding: 15px;
+        font-size: 18px; 
+    }
+
+    body, p {
+        font-size: 18px; 
+    }
+}
